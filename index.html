@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Top Up</title>
+  <link rel="stylesheet" href="style/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <h1>Top Up Diamond</h1>
+  </header>
+
+  <section id="game-selection" class="section">
+    <h2>Pilih Game</h2>
+    <div class="game-grid" id="game-list"></div>
+  </section>
+
+  <section id="order-section" class="section hidden">
+    <h2>Formulir Pemesanan</h2>
+    <form id="order-form">
+      <div id="game-id-fields"></div>
+      <div>
+        <label for="diamond-select">Jumlah Diamond:</label>
+        <select id="diamond-select" required></select>
+      </div>
+      <div>
+        <label for="payment-method">Metode Pembayaran:</label>
+        <input id="payment-method" type="text" value="DANA" disabled />
+      </div>
+      <button type="submit">Lanjutkan Pembayaran</button>
+    </form>
+  </section>
+
+  <script src="sricpt/sricpt.js"></script>
+</body>
+</html>
